@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit Clube Suporte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="fitclube.png" width="600px" height="300">
+    <h1>Central de Suporte</h1>
+    <h2>Vídeos rápidos para te ajudar a usar o sistema.</h2>
+    <h3>Escolha abaixo o que deseja aprender:</h3>
+
+    <!-- VÍDEOS -->
+    <div class="video-container">
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/CODIGO_VIDEO1" 
+                frameborder="0" 
+                allow="autoplay; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Como cadastrar aluno</p>
+        </div>
+        
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/CODIGO_VIDEO2"
+                frameborder="0"
+                allow="autoplay; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Como gerar relatório</p>
+        </div>
+
+        <div class="video-card">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/CODIGO_VIDEO3"
+                frameborder="0"
+                allow="autoplay; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Como atualizar plano</p>
+        </div>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div style="margin-top: 80px;">
+        <h4>Ficou com dúvidas?</h4>
+        <div class="whatsapp-container">
+            <a class="whatsapp" href="https://wa.me/35997408384" target="_blank" title="Fale Conosco">Whatsapp</a>
+        </div>
+    </div>
+
+    <!-- ESTILIZAÇÃO -->
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            color: #0A2F73;       
+            font-size: 35px;
+            margin-top: -50px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h2, h3 {
+            font-size: 15px;
+            margin-top: -5px;
+            color: #363636;
+            font-weight: 300;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 550;
+            color: #141415;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0 auto;
+            max-width: 1000px;
+            flex-wrap: wrap;
+        }
+
+        .video-card {
+            width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .whatsapp-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .whatsapp {  
+            display: inline-flex;
+            width: 180px;
+            height: 50px;
+            background-color: #25D366;
+            border-radius: 8px;
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            padding-left: 40px;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</body>
+</html>
